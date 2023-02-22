@@ -191,6 +191,7 @@ Top 10 highest revenue customers
 The Gamma Gamma model predicts in the next 6 months, the revenue will achieve up to 8594949.15628572$. With the results of 2 models BG-NBD and Gamma-Gamma model, multiply the 2 corresponding values together to calculate the CLTV prediction of each customer. The last result is in Table 7.
 
 ![image](https://user-images.githubusercontent.com/91537767/220504813-5425b7ef-caf6-486e-807c-eac3c09362f3.png)
+
 CLTV in the next 6 months
 
 3.3.3 Segment Customer by CLTV and analysis
