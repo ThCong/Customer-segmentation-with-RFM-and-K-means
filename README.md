@@ -12,7 +12,9 @@ Analyze, evaluate R, F, and M scores and customer segments using traditional RFM
 
 # 3. RESULTS AND DISCUSSION
 3.1 Customer segment by RFM traditional method
+
 3.1.1 Data understanding
+
 The input dataset is a cross-border internet retail dataset covering all transactions for an online retail shop without a location that was situated in the United Kingdom between December 1, 2010, and December 9, 2011. The firm specializes in selling one-of-a-kind presents for special occasions. Wholesalers make up a large portion of the company's clientele.
 The data has about 525461 rows with 28816 orders from 4383 customers from 40 different countries. Before analyzing RFM, the team calculate the total order value, filter out empty customers, delete duplicated rows and select non-negative total order value. After that, choose 3 main columns: customer ID, order date and total order.
 3.1.2 RFM analysis
@@ -176,8 +178,10 @@ The BG-NBD model predicts expected transactions and table 5 is the top 10 custom
 The Gamma Gamma model use frequency and monetary to predict customers’ revenue. This model, like the standard CLTV computation, only takes frequencies larger than 1 and orders values greater than 0. Before applying to the model, it is necessary to check the correlation between those two variables to see how much influence the output results. The correlation seems very weak in Figure 20.
 
 ![image](https://user-images.githubusercontent.com/91537767/220504661-e5b88fd5-2f63-405e-84ea-9e151fec964c.png)
+
 F and M correlation
 ![image](https://user-images.githubusercontent.com/91537767/220504715-3aa85c84-fb86-4e60-89da-7a117e1e2558.png)
+
 Top 10 highest revenue customers
 The Gamma Gamma model predicts in the next 6 months, the revenue will achieve up to 8594949.15628572$. With the results of 2 models BG-NBD and Gamma-Gamma model, multiply the 2 corresponding values together to calculate the CLTV prediction of each customer. The last result is in Table 7.
 
@@ -191,6 +195,7 @@ Segment A has the highest average CLTV prediction value and is much higher than 
 
 ![image](https://user-images.githubusercontent.com/91537767/220504968-e2db02c1-fcd1-4d7b-ada7-77083519c589.png)
 ![image](https://user-images.githubusercontent.com/91537767/220504979-1c86c980-7d9d-44a5-9a1d-6de65dae78ce.png)
+
 With the interval division method, so the number of customers is the same in each segment. However, the revenue is different, the revenue in segment A is similar to K-means, 3 times more than the sum of the other 2 segments.
 3.3.4 Conclusion and Recommendation
 The study has shown the application of RFM in customer segmentation using many different models such as RFM traditional model, K-means, BG-NBD, and Gamma-Gamma model. 
