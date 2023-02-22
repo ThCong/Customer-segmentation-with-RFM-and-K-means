@@ -116,6 +116,7 @@ Meanwhile, champions only account for about 15% of total customers but contribut
 In addition, segments with a small number of customers as well as a small revenue contribution that need less attention such as New Customers and Promising.
 
 3.2 Customer segment by K-means
+
 3.2.1 Data processing
 
 Before doing clustering with K-means, the author checks for outliers and scales data. 
@@ -161,6 +162,7 @@ Based on the analysis results, the author ranks the clusters according to Gold, 
 In Figure 18, the data points in the Gold and Silver clusters are relatively near to each other, but the Bronze cluster contains many scattered points and is quite far from the centroids.
 
 3.3 Calculate CLTV by BG-NBD and Gamma-Gamma model
+
 3.3.1 Calculate CLTV
 
 With the support of Gupta and Lehmann's (2003) research about CLTV, The study computes the CLTV for each customer using the previous RFM calculation findings. CLTV only calculates for customers who have a frequency more than one. 
@@ -168,6 +170,7 @@ With the support of Gupta and Lehmann's (2003) research about CLTV, The study co
 ![image](https://user-images.githubusercontent.com/91537767/220504489-c57809c3-b88e-4cb9-aae5-fa0124b32dc0.png)
 
 Generally, CLTV is also somewhat similar to the traditional RFM model and K-means, when loyal customers, who contribute a lot to the business, always have high CLTV. Champions and Can’t Loose have the highest CLTV in Figure 19. Promising, About to Sleep, New Customers, and Hibernating have the lowest CLTV. 
+
 3.3.2 Predict CLTV in the future
 
 With a theoretical basis and related works on predicting CLTV, from BG-NBD and Gamma-Gamma model, the study conducts CLTV calculation in the next 6 months. In the Pareto/NBD model, the CLTV prediction process needs to use another factor, it is the customer lifetime (T) which is determined as the distance from the customer's initial purchase date to the model implementation date. 
@@ -180,14 +183,18 @@ The Gamma Gamma model use frequency and monetary to predict customers’ revenue
 ![image](https://user-images.githubusercontent.com/91537767/220504661-e5b88fd5-2f63-405e-84ea-9e151fec964c.png)
 
 F and M correlation
+
 ![image](https://user-images.githubusercontent.com/91537767/220504715-3aa85c84-fb86-4e60-89da-7a117e1e2558.png)
 
 Top 10 highest revenue customers
+
 The Gamma Gamma model predicts in the next 6 months, the revenue will achieve up to 8594949.15628572$. With the results of 2 models BG-NBD and Gamma-Gamma model, multiply the 2 corresponding values together to calculate the CLTV prediction of each customer. The last result is in Table 7.
 
 ![image](https://user-images.githubusercontent.com/91537767/220504813-5425b7ef-caf6-486e-807c-eac3c09362f3.png)
 CLTV in the next 6 months
+
 3.3.3 Segment Customer by CLTV and analysis
+
 Customer segmentation by CLTV prediction with 3 levels of A, B, and C corresponding to decreasing CLTV prediction value. Low CLTV is level C and vice versa.
 
 ![image](https://user-images.githubusercontent.com/91537767/220504940-9395c472-fb63-4273-bc59-3964b7a5e466.png)
@@ -197,10 +204,14 @@ Segment A has the highest average CLTV prediction value and is much higher than 
 ![image](https://user-images.githubusercontent.com/91537767/220504979-1c86c980-7d9d-44a5-9a1d-6de65dae78ce.png)
 
 With the interval division method, so the number of customers is the same in each segment. However, the revenue is different, the revenue in segment A is similar to K-means, 3 times more than the sum of the other 2 segments.
+
 3.3.4 Conclusion and Recommendation
+
 The study has shown the application of RFM in customer segmentation using many different models such as RFM traditional model, K-means, BG-NBD, and Gamma-Gamma model. 
 With the traditional RFM model, combined with business knowledge, especially marketing, it is easy to see the usefulness of the model and gain a deeper understanding of its customers. From there, there are suitable marketing strategies and prioritized budget adjustments for specific customer files. RFM model shows Champions and Loyalists are the top customers.
+
 With K-means, the model will balance 3 factors R, F, and M to segment customers by cluster. K-means shows that it is advisable to focus on Gold cluster customers because of their large revenue.
+
 The K-Means clustering and the predictions of the Pareto/NBD and Gamma-Gamma model were almost matched because of the similarity in the number of customers and the total revenue of each segment is quite similar in the 2 models.
 
 
